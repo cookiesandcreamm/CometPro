@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Comet Pro | Log In</title>
+    <meta charset="utf-8">
+
+
+    <link rel="stylesheet" type="text/css" href="./log-in.css"/>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
+  </head>
+
+  <body>
+    <div class="flex">
+      <div class="left flex-center">
+        <div class="login-card">
+          <img src="utd-logo.png" alt="utd-logo"/>
+          <h1>Comet Pro</h1>
+          <h2>Student Organization Sign-In</h2>
+
+          <form id="login-form">
+            <label for="netid">NetID</label><br>
+            <input type="text" id="netid" name="netid" placeholder="Enter Your NetID">
+            <h6 class="error-text">The provided NetID is incorrect.</h6>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter Your Password">
+            <h6 class="error-text">The provided password is incorrect.</h6>
+
+            <a href="mainpage.html">
+            <div class="flex-center">
+               <input type="button" value="Login">
+            </div>
+        </a>
+          </form>
+
+          <p class="helper-text">Forgot Password? <a href="https://oit.utdallas.edu/netid/self-service/"
+            style="color:#3A6B1C">Reset Your Password</a>
+          </p>
+        </div>
+
+        <footer>
+          Need Help? <a href="https://oit.utdallas.edu/helpdesk/"
+          style="color:#BBBBBB">Contact the Help Desk</a>
+        </footer>
+      </div>
+
+      <div class="right"/>
+      <script src="./login.js"></script>
+    </div>
+  </body>
+</html>
