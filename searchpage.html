@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Search Organizations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+      
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style-searchpage.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./mainpagebar-searchpage.css" rel="stylesheet" />
+
+      <div class="main-page-nav-bar-container">
+        <div class="main-page-nav-bar-main-page-nav-bar">
+          <div class="main-page-nav-bar-app-bar">
+            <div class="main-page-nav-bar-left-side">
+              <button class="main-page-nav-bar-icon-button">
+                <div class="main-page-nav-bar-container1">
+                  <img
+                    src="public/playground_assets/menufilledi229-h5ar.svg"
+                    alt="MenuFilledI229"
+                    class="main-page-nav-bar-menu-filled"
+                  />
+                </div>
+              </button>
+            </div>
+            <div class="main-page-nav-bar-app-bar-search-input">
+                <form action="searchpage.html">
+                    <input type="image" src="public/playground_assets/searchfilledi229-64id.svg" 
+                    width: 24px
+                    height: 24px
+                    position: relative
+                    margin-right: 8px
+                    alt="Search Bar">
+                </form>
+              <div class="main-page-nav-bar-typography">
+                <span class="main-page-nav-bar-text TypographyBody1">
+                </span>
+              </div>
+            </div>
+                <div class="main-page-nav-bar-container2">
+                    <form action="settings.html">
+                        <input type="image" src="cog.png"
+                        width: 24px
+                        height: 24px
+                        position: relative
+                        alt="Settings">
+                    </form>
+            
+
+              </div>
+            <button class="main-page-nav-bar-icon-button2">
+              <div class="main-page-nav-bar-container3">
+                <img
+                  src="public/playground_assets/accountcirclefilledi229-ioqd.svg"
+                  alt="AccountCircleFilledI229"
+                  class="main-page-nav-bar-account-circle-filled"
+                />
+              </div>
+            </button>
+            <div class="main-page-nav-bar-minheight"></div>
+          </div>
+          <span class="main-page-nav-bar-text2"><span>Comet Pro</span></span>
+          <div class="container-fluid text-black py-2"
+            style="position:relative; top:64px; background-color: #ffffffe6;">
+            <h1 class="text-center">Search Page</h1>
+          </div>
+          <div class="container-fluid col-10 mt-5">
+            <input type="text" class="form-control mb-5 p-3" placeholder="Search..." id="search-input" style="position:relative; top:92px;">
+            <ul class="list-group list-group-flush text-primary h5" style="position:relative; top:75px;">
+              <li class="list-group-item list-group-item-action p-3">180 Degrees Consulting</li>       
+              <li class="list-group-item list-group-item-action p-3">200percent</li> 
+              <li class="list-group-item list-group-item-action p-3">Aaja Nachle at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Academics for Medicine</li>
+              <li class="list-group-item list-group-item-action p-3">Accessible Prosthetics Initiative UT Dallas Chapter</li>
+              <li class="list-group-item list-group-item-action p-3">Accounting Leadership Association</li>
+              <li class="list-group-item list-group-item-action p-3">Active Minds at UT Dallas</li>
+              <li class="list-group-item list-group-item-action p-3">Actuarial Student Association</li>
+              <li class="list-group-item list-group-item-action p-3">Advancements in Modern Medicine</li>
+              <li class="list-group-item list-group-item-action p-3">Advancements of Indian Opportunity</li>
+              <li class="list-group-item list-group-item-action p-3">AdventHope at UTD</li>
+              <li class="list-group-item list-group-item-action p-3">African Student Union</li>
+              <li class="list-group-item list-group-item-action p-3">Agaram Tamil Student Organization</li>
+              <li class="list-group-item list-group-item-action p-3">Ahlul Bayt Student Association</li>
+              <li class="list-group-item list-group-item-action p-3">Ahmadiyya Muslim Students Association</li>
+              <li class="list-group-item list-group-item-action p-3">AIGA UT Dallas Student Group for Design</li>
+              <li class="list-group-item list-group-item-action p-3">Airsoft Club</li>
+              <li class="list-group-item list-group-item-action p-3">Akshaya Patra UTD</li>
+              <li class="list-group-item list-group-item-action p-3">Aleph Null</li>
+              <li class="list-group-item list-group-item-action p-3">Allies4Children</li>
+              <li class="list-group-item list-group-item-action p-3">Alpha Epsilon Delta</li>
+              <li class="list-group-item list-group-item-action p-3">Alpha Eta Mu Beta</li>
+              <li class="list-group-item list-group-item-action p-3">Alpha Gamma Delta</li>
+              <li class="list-group-item list-group-item-action p-3">Alpha Kappa Alpha Sorority Inc.</li>
+              <li class="list-group-item list-group-item-action p-3">Alpha Kappa Delta Phi</li>
+              <li class="list-group-item list-group-item-action p-3">Alpha Kappa Psi</li>
+              <li class="list-group-item list-group-item-action p-3">Alpha Lambda Mu</li>
+              <li class="list-group-item list-group-item-action p-3">Alpha Omega Campus Ministry</li>
+              <li class="list-group-item list-group-item-action p-3">Alpha Phi Omega - Alpha Epsilon Zeta</li>
+              <li class="list-group-item list-group-item-action p-3">Alpha Psi Nu Chapter of Sigma Tau Delta</li>
+              <li class="list-group-item list-group-item-action p-3">Alzheimer's Foundation of America at UTD </li>
+              <li class="list-group-item list-group-item-action p-3">Amazon Web Services</li>
+              <li class="list-group-item list-group-item-action p-3">American Association of Petroleum Geologists</li>
+              <li class="list-group-item list-group-item-action p-3">American Heart Association at UTD</li>
+              <li class="list-group-item list-group-item-action p-3">American Institute of Aeronautics and Astronautics at UT Dallas</li>
+              <li class="list-group-item list-group-item-action p-3">American Institute of Graphic Arts at UTD (AIGA UTD)</li>
+              <li class="list-group-item list-group-item-action p-3">American Marketing Association</li>
+              <li class="list-group-item list-group-item-action p-3">American Medical Student Association</li>
+              <li class="list-group-item list-group-item-action p-3">American Medical Women's Association at UTD (AMWA UTD)</li>
+              <li class="list-group-item list-group-item-action p-3">American Muslim Women Physician Association at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">American Physician Scientists Association</li> 
+              <li class="list-group-item list-group-item-action p-3">American Red Cross Club at The University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">American Sign Language organization</li> 
+              <li class="list-group-item list-group-item-action p-3">American Society of Mechanical Engineers</li> 
+              <li class="list-group-item list-group-item-action p-3">Analytics on In-Memory Database</li> 
+              <li class="list-group-item list-group-item-action p-3">Anim3</li> 
+              <li class="list-group-item list-group-item-action p-3">Animal Rights Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Animation Guild</li> 
+              <li class="list-group-item list-group-item-action p-3">Anime Orchestra Ensemble</li> 
+              <li class="list-group-item list-group-item-action p-3">Arab Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Armenian Student Association at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Artificial Intelligence Society</li> 
+              <li class="list-group-item list-group-item-action p-3">ArtSci Convergence</li> 
+              <li class="list-group-item list-group-item-action p-3">Ascend</li> 
+              <li class="list-group-item list-group-item-action p-3">ASCM UT Dallas Student Forum</li> 
+              <li class="list-group-item list-group-item-action p-3">Asian Artists Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Asian Student Organization</li> 
+              <li class="list-group-item list-group-item-action p-3">Aspire Medical</li> 
+              <li class="list-group-item list-group-item-action p-3">Association for Computing Machinery</li> 
+              <li class="list-group-item list-group-item-action p-3">Association for Information Systems</li> 
+              <li class="list-group-item list-group-item-action p-3">Association of Brazilian Students</li> 
+              <li class="list-group-item list-group-item-action p-3">Association of Digital Music Creators</li> 
+              <li class="list-group-item list-group-item-action p-3">Association of Energy Engineers</li> 
+              <li class="list-group-item list-group-item-action p-3">Association of Energy Engineers(AEE) Student Club UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Association of International Petroleum Negotiators</li> 
+              <li class="list-group-item list-group-item-action p-3">Association of Latino Professionals for America</li> 
+              <li class="list-group-item list-group-item-action p-3">Association of Latinx American Students</li> 
+              <li class="list-group-item list-group-item-action p-3">Association of Supply Chain Management</li> 
+              <li class="list-group-item list-group-item-action p-3">Athena Labs</li> 
+              <li class="list-group-item list-group-item-action p-3">Awaazein</li> 
+              <li class="list-group-item list-group-item-action p-3">Baha'i Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Baking for a Cause</li> 
+              <li class="list-group-item list-group-item-action p-3">Bangladeshi Student Organization</li> 
+              <li class="list-group-item list-group-item-action p-3">BAPS Campus Fellowship</li> 
+              <li class="list-group-item list-group-item-action p-3">Baptist Student Ministry</li> 
+              <li class="list-group-item list-group-item-action p-3">Beat! UTD - Comets on Fire</li> 
+              <li class="list-group-item list-group-item-action p-3">Believers' LoveWorld Campus Ministry</li> 
+              <li class="list-group-item list-group-item-action p-3">Best Buddies UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Beta Chi Theta</li> 
+              <li class="list-group-item list-group-item-action p-3">Between the Lines UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Big Data Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Biochemistry Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Biomedical Engineering Graduate Student Assembly</li> 
+              <li class="list-group-item list-group-item-action p-3">Biomedical Engineering Society</li> 
+              <li class="list-group-item list-group-item-action p-3">Black Graduate Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Black Student Alliance</li> 
+              <li class="list-group-item list-group-item-action p-3">Black Students for Public Health</li> 
+              <li class="list-group-item list-group-item-action p-3">Blockchain and Cryptographic Systems Organization</li> 
+              <li class="list-group-item list-group-item-action p-3">Board Gaming Club UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">BOBS (Being Our Best Self)</li> 
+              <li class="list-group-item list-group-item-action p-3">Books & Bevs</li> 
+              <li class="list-group-item list-group-item-action p-3">Breaking Barriers at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Bring Change to Mind at The University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Bujo Buddies UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Camp Kesem at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Campus Chinese Bible Study</li> 
+              <li class="list-group-item list-group-item-action p-3">CHAARG</li> 
+              <li class="list-group-item list-group-item-action p-3">Chabad Jewish Student Organization at UTD </li> 
+              <li class="list-group-item list-group-item-action p-3">Charter for Compassion at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Chemistry Graduate student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Chemistry Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Chess Club UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Chi Alpha Iota Diaternity</li> 
+              <li class="list-group-item list-group-item-action p-3">Chi Phi Fraternity</li> 
+              <li class="list-group-item list-group-item-action p-3">Chinese Dancing Crew</li> 
+              <li class="list-group-item list-group-item-action p-3">Chinese Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Christian Students on Campus</li> 
+              <li class="list-group-item list-group-item-action p-3">Circle K International</li> 
+              <li class="list-group-item list-group-item-action p-3">Citizens' Climate Lobby at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Citizens Climate Lobby UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Cloud Computing Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Club Golf</li> 
+              <li class="list-group-item list-group-item-action p-3">Club Improv</li> 
+              <li class="list-group-item list-group-item-action p-3">Club Nine and Three-Quarters</li> 
+              <li class="list-group-item list-group-item-action p-3">Code.exe</li> 
+              <li class="list-group-item list-group-item-action p-3">College Democrats at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">College Diabetes Network at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">College Life</li> 
+              <li class="list-group-item list-group-item-action p-3">College Panhellenic Council</li> 
+              <li class="list-group-item list-group-item-action p-3">College Republicans at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Collegiate Chapter of the Association of Fundraising Professionals at UT Dallas (AFP UTD)</li> 
+              <li class="list-group-item list-group-item-action p-3">Collegiate World Affairs Council</li> 
+              <li class="list-group-item list-group-item-action p-3">Combat Robotics at UTDallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Comet Cadenza: Community Outreach Ensemble</li> 
+              <li class="list-group-item list-group-item-action p-3">Comet Comedy</li> 
+              <li class="list-group-item list-group-item-action p-3">Comet Cricket Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Comet FIRST Alumni Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Comet Life</li> 
+              <li class="list-group-item list-group-item-action p-3">Comet Marketing</li> 
+              <li class="list-group-item list-group-item-action p-3">Comet Solar Racing</li>
+              <li class="list-group-item list-group-item-action p-3">Comets Against Computer Programming</li> 
+              <li class="list-group-item list-group-item-action p-3">Comets for Better Transit</li> 
+              <li class="list-group-item list-group-item-action p-3">Comets for the Preborn</li> 
+              <li class="list-group-item list-group-item-action p-3">CometTHON</li> 
+              <li class="list-group-item list-group-item-action p-3">CometTutors</li> 
+              <li class="list-group-item list-group-item-action p-3">Computer Security Group</li> 
+              <li class="list-group-item list-group-item-action p-3">Connect CMI</li> 
+              <li class="list-group-item list-group-item-action p-3">Consulting and Leadership Development Society</li> 
+              <li class="list-group-item list-group-item-action p-3">Contra Corners</li> 
+              <li class="list-group-item list-group-item-action p-3">Criminology Graduate Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Criminology Graduate Student Organization</li> 
+              <li class="list-group-item list-group-item-action p-3">Cru</li> 
+              <li class="list-group-item list-group-item-action p-3">Cybersecurity Club at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Dallas Advocates for Nutritional and Emergency Services (DANES)</li> 
+              <li class="list-group-item list-group-item-action p-3">Dallas China Care</li> 
+              <li class="list-group-item list-group-item-action p-3">Dallas Formula Racing</li> 
+              <li class="list-group-item list-group-item-action p-3">Dallas Musical Outreach</li> 
+              <li class="list-group-item list-group-item-action p-3">Dallas Students Democracy</li> 
+              <li class="list-group-item list-group-item-action p-3">Data Science Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Dauntless</li> 
+              <li class="list-group-item list-group-item-action p-3">DECA</li>
+              <li class="list-group-item list-group-item-action p-3">Deeds Not Words</li> 
+              <li class="list-group-item list-group-item-action p-3">Delta Delta Delta</li> 
+              <li class="list-group-item list-group-item-action p-3">Delta Epsilon Psi</li> 
+              <li class="list-group-item list-group-item-action p-3">Delta Kappa Delta Sorority</li> 
+              <li class="list-group-item list-group-item-action p-3">Delta Sigma Pi - Chi Psi Chapter</li> 
+              <li class="list-group-item list-group-item-action p-3">Delta Sigma Theta Sorority, Inc.</li> 
+              <li class="list-group-item list-group-item-action p-3">Delta Tau Delta</li> 
+              <li class="list-group-item list-group-item-action p-3">Delta Zeta</li> 
+              <li class="list-group-item list-group-item-action p-3">Design Build Fly UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Developer Student Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Dhunki A Cappella</li> 
+              <li class="list-group-item list-group-item-action p-3">Divergent</li> 
+              <li class="list-group-item list-group-item-action p-3">DTX Dandiya</li> 
+              <li class="list-group-item list-group-item-action p-3">Ekam at The University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Enactus</li> 
+              <li class="list-group-item list-group-item-action p-3">Engineer in Residence Mentoring Program</li> 
+              <li class="list-group-item list-group-item-action p-3">Entertainment and Media Business Organization for Students</li> 
+              <li class="list-group-item list-group-item-action p-3">Entrepreneurship Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Envision</li> 
+              <li class="list-group-item list-group-item-action p-3">Epic Movement</li> 
+              <li class="list-group-item list-group-item-action p-3">Eternity Brothers</li> 
+              <li class="list-group-item list-group-item-action p-3">Eternity Sisters</li> 
+              <li class="list-group-item list-group-item-action p-3">FeelGood UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">FOCUS: Fellowship of Christian University Students</li> 
+              <li class="list-group-item list-group-item-action p-3">Female Leaders of America in Science and Health</li> 
+              <li class="list-group-item list-group-item-action p-3">Filipino Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Finance Management Council</li> 
+              <li class="list-group-item list-group-item-action p-3">Financial Leadership Association</li> 
+              <li class="list-group-item list-group-item-action p-3">FinTech UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">First Love Fellowship</li> 
+              <li class="list-group-item list-group-item-action p-3">Fit Life UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">For Autistic Empowerment</li> 
+              <li class="list-group-item list-group-item-action p-3">Foster Connect</li> 
+              <li class="list-group-item list-group-item-action p-3">Fraternity & Sorority Life</li> 
+              <li class="list-group-item list-group-item-action p-3">Friends of MSF at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Friendship Association of Chinese Students and Scholars</li> 
+              <li class="list-group-item list-group-item-action p-3">Fusion UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Future Academic Mentorship</li> 
+              <li class="list-group-item list-group-item-action p-3">Future Healthcare Leaders Alliance (FHLA)</li> 
+              <li class="list-group-item list-group-item-action p-3">Galerstein Gender Center</li> 
+              <li class="list-group-item list-group-item-action p-3">Gamma Iota Sigma</li> 
+              <li class="list-group-item list-group-item-action p-3">Gamma Theta Upsilon Geographic Honors Society</li> 
+              <li class="list-group-item list-group-item-action p-3">GDI Club</li> 
+              <li class="list-group-item list-group-item-action p-3">GeoClub</li> 
+              <li class="list-group-item list-group-item-action p-3">Geophysical Society</li> 
+              <li class="list-group-item list-group-item-action p-3">Geospatial Information Sciences Student Organization</li> 
+              <li class="list-group-item list-group-item-action p-3">Girls Who Code</li> 
+              <li class="list-group-item list-group-item-action p-3">Global BrainHealth & Wellness Initiative</li> 
+              <li class="list-group-item list-group-item-action p-3">Global Business Organization</li> 
+              <li class="list-group-item list-group-item-action p-3">Global Medical and Dental Brigades</li> 
+              <li class="list-group-item list-group-item-action p-3">Global Medical Missions Alliance</li> 
+              <li class="list-group-item list-group-item-action p-3">Global Mobility Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Golden Key Honor Society</li> 
+              <li class="list-group-item list-group-item-action p-3">Grace Chinese Christian Fellowship</li> 
+              <li class="list-group-item list-group-item-action p-3">Graduate Finance Management Council</li> 
+              <li class="list-group-item list-group-item-action p-3">Graduate Students in Physics</li> 
+              <li class="list-group-item list-group-item-action p-3">Habesha Student Union</li> 
+              <li class="list-group-item list-group-item-action p-3">Hack To Help</li> 
+              <li class="list-group-item list-group-item-action p-3">Hallyu Wave</li> 
+              <li class="list-group-item list-group-item-action p-3">Hansini UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Harmony Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Health Occupations Students of America (HOSA)</li> 
+              <li class="list-group-item list-group-item-action p-3">Healthcare Consulting Group</li> 
+              <li class="list-group-item list-group-item-action p-3">Healthcare Management Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Hearts for the Homeless</li> 
+              <li class="list-group-item list-group-item-action p-3"><a href="organization1.html">Helping Hands</a></li> 
+              <li class="list-group-item list-group-item-action p-3">Helping Hearts UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Heroes United FC</li> 
+              <li class="list-group-item list-group-item-action p-3">Hillel</li> 
+              <li class="list-group-item list-group-item-action p-3">Hindu YUVA</li> 
+              <li class="list-group-item list-group-item-action p-3">Horror-Fi Reads</li> 
+              <li class="list-group-item list-group-item-action p-3">IEEE Solid-State Circuit Society (SSCS)</li> 
+              <li class="list-group-item list-group-item-action p-3">IGNITE at The University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">IMA Student Chapter at The University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Immigrant Rights Coalition</li> 
+              <li class="list-group-item list-group-item-action p-3">Impact Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Indian Cultural Association UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Indian Students Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Indigo Magazine</li> 
+              <li class="list-group-item list-group-item-action p-3">Infinity Lions Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Information Systems Security Association UTD Subchapter</li> 
+              <li class="list-group-item list-group-item-action p-3">Informs at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">INNOV8</li> 
+              <li class="list-group-item list-group-item-action p-3">Intellichoice UTDallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Intelligence Analytics Society</li> 
+              <li class="list-group-item list-group-item-action p-3">Inter Collegiate Prayer Fellowship</li> 
+              <li class="list-group-item list-group-item-action p-3">Intercultural Programs</li> 
+              <li class="list-group-item list-group-item-action p-3">International Christian Fellowship (ICF)</li> 
+              <li class="list-group-item list-group-item-action p-3">International Management - Student Council</li> 
+              <li class="list-group-item list-group-item-action p-3">International Systems Security Association UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">InterVarsity Christian Fellowship</li> 
+              <li class="list-group-item list-group-item-action p-3">Investments and Securities Club at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">IoT Club UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Iranian Student Community</li> 
+              <li class="list-group-item list-group-item-action p-3">Islamic Relief at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Ismaili Muslim Student Association at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Japanese Language Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Japanese Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">John Marshall Prelaw Society</li> 
+              <li class="list-group-item list-group-item-action p-3">Jonsson School Graduate Student Organization</li> 
+              <li class="list-group-item list-group-item-action p-3">Jujutsu Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Kannada Sangha @ UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Kappa Alpha Theta</li> 
+              <li class="list-group-item list-group-item-action p-3">Kappa Delta Chi</li> 
+              <li class="list-group-item list-group-item-action p-3">Kappa Delta Nu</li> 
+              <li class="list-group-item list-group-item-action p-3">Kesem at the University of Texas - Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Kidney Disease Screening and Awareness Program </li> 
+              <li class="list-group-item list-group-item-action p-3">Kids Print</li> 
+              <li class="list-group-item list-group-item-action p-3">Kruthi UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Laksh Indian Dance Team</li> 
+              <li class="list-group-item list-group-item-action p-3">Lambda Theta Phi Latin Fraternity, Inc.</li> 
+              <li class="list-group-item list-group-item-action p-3">Large Campus Events</li> 
+              <li class="list-group-item list-group-item-action p-3">Last Writers</li> 
+              <li class="list-group-item list-group-item-action p-3">Latter-day Saint Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">League of Legends at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">League of United Latin American Citizens</li> 
+              <li class="list-group-item list-group-item-action p-3">Lemon Club at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Life Skills at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Living Water Student Fellowship</li> 
+              <li class="list-group-item list-group-item-action p-3">Magic UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Making Healthcare Affordable</li> 
+              <li class="list-group-item list-group-item-action p-3">Malankara Orthodox Christian Student Movement</li> 
+              <li class="list-group-item list-group-item-action p-3">MannMukti</li> 
+              <li class="list-group-item list-group-item-action p-3">Mantra Lounge</li> 
+              <li class="list-group-item list-group-item-action p-3">Marketing Analytics Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Math Club</li> 
+              <li class="list-group-item list-group-item-action p-3">MBAs for Christ</li> 
+              <li class="list-group-item list-group-item-action p-3">MCAT Support</li> 
+              <li class="list-group-item list-group-item-action p-3">Medical City Dallas Volunteers Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Medical Humanities Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Medical Spanish Interpreters</li> 
+              <li class="list-group-item list-group-item-action p-3">MEDLIFE at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Memories Matter</li> 
+              <li class="list-group-item list-group-item-action p-3">Minority Assoication of Pre-Medical Students</li> 
+              <li class="list-group-item list-group-item-action p-3">Molding Doctors</li> 
+              <li class="list-group-item list-group-item-action p-3">Muslim Interscholastic Tournament</li> 
+              <li class="list-group-item list-group-item-action p-3">Muslim Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Muslims For Healthcare</li> 
+              <li class="list-group-item list-group-item-action p-3">National Association of Black Accountants</li> 
+              <li class="list-group-item list-group-item-action p-3">National Association of Women MBAs - UTD Chapter</li> 
+              <li class="list-group-item list-group-item-action p-3">National Association of Women MBAs, the University of Texas at Dallas Chapter</li> 
+              <li class="list-group-item list-group-item-action p-3">National Organization for Women at UTD (NOW UTD)</li> 
+              <li class="list-group-item list-group-item-action p-3">National Society of Black Engineers</li> 
+              <li class="list-group-item list-group-item-action p-3">National Society of Collegiate Scholars</li> 
+              <li class="list-group-item list-group-item-action p-3">National Student Speech Language Hearing Association (NSSLHA)</li> 
+              <li class="list-group-item list-group-item-action p-3">Native American Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Nebula Labs</li> 
+              <li class="list-group-item list-group-item-action p-3">Nepalese Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Neuroscience Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Newman Catholic Ministry</li> 
+              <li class="list-group-item list-group-item-action p-3">Nigerian Students Association</li> 
+              <li class="list-group-item list-group-item-action p-3">No Girl Left Behind</li> 
+              <li class="list-group-item list-group-item-action p-3">No Labels</li> 
+              <li class="list-group-item list-group-item-action p-3">Novis A Capella</li> 
+              <li class="list-group-item list-group-item-action p-3">Office of Student Volunteerism</li> 
+              <li class="list-group-item list-group-item-action p-3">Olympic Weightlifting at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Omega Delta Phi</li> 
+              <li class="list-group-item list-group-item-action p-3">One For All</li> 
+              <li class="list-group-item list-group-item-action p-3">OpenUTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Operation Smile UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Orthodox Christian Campus Ministries</li> 
+              <li class="list-group-item list-group-item-action p-3">Out in Science, Technology, Engineering, and Mathematics (oSTEM)</li> 
+              <li class="list-group-item list-group-item-action p-3">Pakistani Students Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Palette Hope</li> 
+              <li class="list-group-item list-group-item-action p-3">Partners In Health Engage at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Peer Advisors for Veteran Education</li> 
+              <li class="list-group-item list-group-item-action p-3">Peer Health Exchange</li> 
+              <li class="list-group-item list-group-item-action p-3">Period Project</li> 
+              <li class="list-group-item list-group-item-action p-3">Phi Alpha Theta</li> 
+              <li class="list-group-item list-group-item-action p-3">Phi Beta Lambda</li> 
+              <li class="list-group-item list-group-item-action p-3">Phi Delta Theta</li> 
+              <li class="list-group-item list-group-item-action p-3">Phi Gamma Delta</li> 
+              <li class="list-group-item list-group-item-action p-3">Philosophy Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Pi Kappa Phi</li> 
+              <li class="list-group-item list-group-item-action p-3">Pokemon League at University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Post Baccalaureate Pre-Health Society</li> 
+              <li class="list-group-item list-group-item-action p-3">Pratham UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Pre-Dental Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Pre-Health Professionals Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Pre-Occupational Therapy & Pre-Physical Therapy Association UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Pre-Optometry Professional Society</li> 
+              <li class="list-group-item list-group-item-action p-3">Pre-Physician Assistant Society</li> 
+              <li class="list-group-item list-group-item-action p-3">PreProduction Collaborative</li> 
+              <li class="list-group-item list-group-item-action p-3">Pre-Student Osteopathic Medical Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Pre-Veterinary Medicine Society</li> 
+              <li class="list-group-item list-group-item-action p-3">Pride @ UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Process Automation & Re-engineering Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Project Management Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Project Sunshine at The University of Texas at Dallas</li> 
+              <li class="list-group-item p-3">Public Policy and Political Economy Club UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Quality Assurance Organization</li> 
+              <li class="list-group-item list-group-item-action p-3">Queer and Trans People of Color at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Radio UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Rangam Indian Classical Dance Team</li> 
+              <li class="list-group-item list-group-item-action p-3">Reaching and Inspiring Student Engineers</li> 
+              <li class="list-group-item list-group-item-action p-3">Real Estate Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Reasonable Faith</li> 
+              <li class="list-group-item list-group-item-action p-3">Red Cross UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Reformed University Fellowship International</li> 
+              <li class="list-group-item list-group-item-action p-3">Reptile Club of UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Reviving Islam Networking Group</li> 
+              <li class="list-group-item list-group-item-action p-3">Riichi Mahjong Club</li> 
+              <li class="list-group-item list-group-item-action p-3">RoboSub</li> 
+              <li class="list-group-item list-group-item-action p-3">Rocket League Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Roosevelt at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Roundnet Club UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Salesforce Student Chapter UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">SAP Users' Group</li> 
+              <li class="list-group-item list-group-item-action p-3">School of Behavioral and Brain Sciences</li> 
+              <li class="list-group-item list-group-item-action p-3">School of Interdisciplinary Studies</li> 
+              <li class="list-group-item list-group-item-action p-3">Scientific Computing Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Sculpture Club</li> 
+              <li class="list-group-item list-group-item-action p-3">SEDS @ UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">She's the First at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Shooting Comets UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Sigma Alpha Epsilon Fraternity</li> 
+              <li class="list-group-item list-group-item-action p-3">Sigma Gamma Rho Sorority, Inc.</li> 
+              <li class="list-group-item list-group-item-action p-3">Sigma Lambda Alpha Sorority Inc.</li> 
+              <li class="list-group-item list-group-item-action p-3">Sigma Lambda Gamma National Sorority Inc.</li> 
+              <li class="list-group-item list-group-item-action p-3">Sigma Lambda Gamma Sorority Inc.</li> 
+              <li class="list-group-item list-group-item-action p-3">Sigma Sigma Rho Sorority Inc</li> 
+              <li class="list-group-item list-group-item-action p-3">Sikh Students Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Skate Club</li> 
+              <li class="list-group-item list-group-item-action p-3">SkillsUSA UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Society for Chronic Pain </li> 
+              <li class="list-group-item list-group-item-action p-3">Society for the Advancement of Chicanos/Hispanics and Native Americans in Science</li> 
+              <li class="list-group-item list-group-item-action p-3">Society of Asian Scientist and Engineers</li> 
+              <li class="list-group-item list-group-item-action p-3">Society of Hispanic Professional Engineers</li> 
+              <li class="list-group-item list-group-item-action p-3">Society of Physics Students at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Society of Women Engineers</li> 
+              <li class="list-group-item list-group-item-action p-3">Sociology Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Sommiloni of Bengali Students</li> 
+              <li class="list-group-item list-group-item-action p-3">Sons of the Flag @ UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">South Asian American Voter Empowerment (SAAVE UTD)</li> 
+              <li class="list-group-item list-group-item-action p-3">Special Olympics Club at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">SpongeBob Club at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Sri Lankan Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Stitch to Enrich</li> 
+              <li class="list-group-item list-group-item-action p-3">Stop Pretending You Can't Dance</li> 
+              <li class="list-group-item list-group-item-action p-3">Strings Attached</li> 
+              <li class="list-group-item list-group-item-action p-3">STRIVE</li> 
+              <li class="list-group-item list-group-item-action p-3">Student Ambassadors</li> 
+              <li class="list-group-item list-group-item-action p-3">Student Game Developer Association (SGDA)</li> 
+              <li class="list-group-item list-group-item-action p-3">Student Government</li> 
+              <li class="list-group-item list-group-item-action p-3">Student Leadership Programs</li> 
+              <li class="list-group-item list-group-item-action p-3">Student Mobilization</li> 
+              <li class="list-group-item list-group-item-action p-3">Student Organization Center</li> 
+              <li class="list-group-item list-group-item-action p-3">Student Union</li> 
+              <li class="list-group-item list-group-item-action p-3">Student Veterans Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Students Advocating for Mental Health Education (SAMHE)</li> 
+              <li class="list-group-item list-group-item-action p-3">Students for Justice in Palestine</li> 
+              <li class="list-group-item list-group-item-action p-3">Students Promoting Acts of Random Kindness (SPARK)</li> 
+              <li class="list-group-item list-group-item-action p-3">T.R.U.T.H (Taking Real Understanding to Heart) Bible Club </li> 
+              <li class="list-group-item list-group-item-action p-3">Tabletop RPG Club at The University Of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Taiwanese Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">Tau Beta Pi Engineering Honor Society</li> 
+              <li class="list-group-item list-group-item-action p-3">Teal Comets</li> 
+              <li class="list-group-item list-group-item-action p-3">TechPact</li> 
+              <li class="list-group-item list-group-item-action p-3">TEDxUTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Tespa at UTDallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Texas Rising UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">The American Institute of Aeronautics and Astronautics</li> 
+              <li class="list-group-item list-group-item-action p-3">The American Medical Women's Association at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">The American Society of Mechanical Engineers</li> 
+              <li class="list-group-item list-group-item-action p-3">The Association for Computing Machinery at The University of Texas at Dallas (ACM)</li> 
+              <li class="list-group-item list-group-item-action p-3">The Association of International Petroleum Negotiators (AIPN) UTD Student Club</li> 
+              <li class="list-group-item list-group-item-action p-3">The Association of Women in Psychology (TAWP)</li> 
+              <li class="list-group-item list-group-item-action p-3">The Big Data Club</li>  
+              <li class="list-group-item list-group-item-action p-3">The Brain Exercise Initiative</li> 
+              <li class="list-group-item list-group-item-action p-3">The Classical Liberal Society</li> 
+              <li class="list-group-item list-group-item-action p-3">The Comet Symphonique at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">The Drawing Sessions</li> 
+              <li class="list-group-item list-group-item-action p-3">The Drivers Club</li> 
+              <li class="list-group-item list-group-item-action p-3">The Fashion Club at The University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">The Global Business Organization</li> 
+              <li class="list-group-item list-group-item-action p-3">The Historical Swordfighting Guild of UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">The Institute of Electrical and Electronics Engineers at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">The Journal Club for the Biosciences</li> 
+              <li class="list-group-item list-group-item-action p-3">The Korean International Student Association</li> 
+              <li class="list-group-item list-group-item-action p-3">The Korean Language Club at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">The Lavender Club</li> 
+              <li class="list-group-item list-group-item-action p-3">The Magic the Gathering Club at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">The Mercury</li> 
+              <li class="list-group-item list-group-item-action p-3">The National Society of Leadership and Success</li> 
+              <li class="list-group-item list-group-item-action p-3">The Period Project</li> 
+              <li class="list-group-item list-group-item-action p-3">The Phoenix Foundation</li> 
+              <li class="list-group-item list-group-item-action p-3">The Product Base</li> 
+              <li class="list-group-item list-group-item-action p-3">The Psi Zeta Chapter of the Chi Phi Fraternity</li> 
+              <li class="list-group-item list-group-item-action p-3">The Research Club</li> 
+              <li class="list-group-item list-group-item-action p-3">The Rotaract Club of UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">The Scarcity Project</li> 
+              <li class="list-group-item list-group-item-action p-3">The Sigma Kappa Chapter of Alpha Kappa Alpha Sorority Incorporated</li> 
+              <li class="list-group-item list-group-item-action p-3">The Society for Human Resource Management at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">The Society of Physics Students at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">The Taekwondo Club at The University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">The Undergraduate Accounting Club</li> 
+              <li class="list-group-item list-group-item-action p-3">The United Nations Association at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">The UT Dallas Photography Club</li> 
+              <li class="list-group-item list-group-item-action p-3">The World Languages Club at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Travelytics</li> 
+              <li class="list-group-item list-group-item-action p-3">Trivia Club and QuizBowl UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Tuesday Toastmasters</li> 
+              <li class="list-group-item list-group-item-action p-3">Turning Point USA</li> 
+              <li class="list-group-item list-group-item-action p-3">UNICEF at UT-Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Unicycle Club at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">United Mission for Relief and Development (UMR)</li> 
+              <li class="list-group-item list-group-item-action p-3">United Nations' Girl Up Campaign Chapter at UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">University Blood Initiative (UBI) UT Dallas Chapter</li> 
+              <li class="list-group-item list-group-item-action p-3">User Experience (UX) Club</li> 
+              <li class="list-group-item list-group-item-action p-3">UT DALLAS GRADUATES OF COMPUTER SCIENCE</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD ASHRAE(American Society of Heating, Refrigerating and Air-Conditioning Engineers)</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Content Creators</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Financial Literacy Club</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD geophysical society</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Girl Up</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Global Surgery Student Alliance</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD HOSA</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Jwala</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Paper Airplanes</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Pre Pharmacy Association</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Raftaar v</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Science Outreach</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Service-dogs In Training (SIT)</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD TaRaas</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Terry Scholars</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD Thirst Project</li> 
+              <li class="list-group-item list-group-item-action p-3">UTD TV</li> 
+              <li class="list-group-item list-group-item-action p-3">UTDesign Makerspace</li> 
+              <li class="list-group-item list-group-item-action p-3">UTDuelists</li> 
+              <li class="list-group-item list-group-item-action p-3">UTeach Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Vaalmeengal Tamil Sangam</li> 
+              <li class="list-group-item list-group-item-action p-3">Vietnamese International Network of Culture, Education, and Friendship</li> 
+              <li class="list-group-item list-group-item-action p-3">Vietnamese Student Association (VSA)</li> 
+              <li class="list-group-item list-group-item-action p-3">Volunteer Proofreaders for Project Gutenberg</li> 
+              <li class="list-group-item list-group-item-action p-3">We Care UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Wesley at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Win STEM at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Wind Energy Club</li> 
+              <li class="list-group-item list-group-item-action p-3">Wishmakers</li> 
+              <li class="list-group-item list-group-item-action p-3">Women and Children Outreach Program</li> 
+              <li class="list-group-item list-group-item-action p-3">Women in Animation at UT Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Women in Cybersecurity</li> 
+              <li class="list-group-item list-group-item-action p-3">Women in Technology & Business</li> 
+              <li class="list-group-item list-group-item-action p-3">Women Mentoring Women in Engineering</li> 
+              <li class="list-group-item list-group-item-action p-3">Women Pursuing Law</li> 
+              <li class="list-group-item list-group-item-action p-3">Women Who Compute</li> 
+              <li class="list-group-item list-group-item-action p-3">Women's Health Initiative UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Writing Without Purpose</li> 
+              <li class="list-group-item list-group-item-action p-3">XR UTD</li> 
+              <li class="list-group-item list-group-item-action p-3">Young Democratic Socialists of America at the University of Texas at Dallas</li> 
+              <li class="list-group-item list-group-item-action p-3">Young Women in Science and Engineering Alumni</li> 
+              <li class="list-group-item list-group-item-action p-3">YWISE Alumni Chapter</li>      
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document.querySelector('#search-input').addEventListener('input', filterList);
+
+    function filterList(){
+      const searchInput = document.querySelector('#search-input');
+      const filter = searchInput.value.toLowerCase();
+      const listItems = document.querySelectorAll('.list-group-item');
+
+      listItems.forEach((item) =>{
+        let text = item.textContent;
+        if(text.toLowerCase().includes(filter.toLowerCase())){
+          item.style.display = '';
+        }
+        else{
+          item.style.display = 'none';
+        }
+      
+      });
+    }
+
+  </script>
+</html>

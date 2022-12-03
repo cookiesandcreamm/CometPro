@@ -1,0 +1,121 @@
+html body {
+    margin: 0px; padding: 0px;
+    font-family: -apple-system,
+      system-ui, sans-serif;
+  }
+  
+  .flex {
+    display: flex;
+  } .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left {
+    background: #1B4032;
+    min-width: 500px;
+    height: 100vh;
+    flex: 2;
+  }
+  
+  .login-card {
+    width: 66%;
+    padding: 20px;
+    max-width: 400px;
+    background: white;
+    margin-bottom: -10%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 100px #00000080;
+  }
+  
+  img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -50%;
+    width: 66%;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 55px;
+    color: #08310C;
+    margin: 0px;
+  }
+  
+  h2 {
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #CCCCCC;
+  }
+  
+  label {
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 5px;
+    color: #333333;
+  }
+  
+  input[type=text],
+  input[type=password] {
+    box-shadow: 0px 0px 15px #00000030;
+    border: 2px solid #154734;
+    width: calc(100% - 40px);
+    border-radius: 20px;
+    background: #EAF9E2;
+    padding: 15px 20px;
+    margin: 5px 0px;
+    color: #999999;
+    outline: none;
+  }
+  
+  input[type=button] {
+    box-shadow: 0px 0px 15px #00000030;
+    border-style: none;
+    border-radius: 20px;
+    background: #154734;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    width: 50%;
+  } input[type=submit]:hover {
+    cursor: pointer;
+  }
+  
+  h6 {
+    margin: 0px 0px 10px 5px;
+    visibility: hidden;
+    font-weight: 400;
+    font-size: 10px;
+    color: red;
+  }
+  
+  .helper-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  footer {
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    bottom: 30px;
+    color: white;
+  }
+  
+  .right {
+    background: url(./utd-campus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    flex: 3;
+  }
+  
